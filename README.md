@@ -1,4 +1,4 @@
-# fcp-local-rag
+# fcc-local-rag
 
 
 Installation Guide - Few Changes

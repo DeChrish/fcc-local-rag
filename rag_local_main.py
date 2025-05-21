@@ -30,8 +30,9 @@ if __name__ == "__main__":
     # 3. Get Embedding Function
     embedding_function = get_embedding_function() # Using Ollama nomic-embed-text
     #vector_store = get_vector_store(embedding_function)
-    # vector_store = index_documents(chunks, embedding_function)
-
+    
+    #  4. Index Documents
+    # vector_store = index_documents(chunks, embedding_function)  // For new docs
     vector_store = Chroma(persist_directory="chroma_db", embedding_function=embedding_function)
 
     # 4. Create RAG Chain
